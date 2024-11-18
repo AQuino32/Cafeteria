@@ -74,7 +74,7 @@
         <nav class="menu">
             <ul>
                 <li><a href="CategoriaServlet">Categoría</a></li>
-                <li><a href="#search">Buscar</a></li>
+                <li><a href="ProductosServlet">Productos</a></li>
                 <li><a href="#about">Acerca</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>

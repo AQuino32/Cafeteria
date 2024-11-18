@@ -186,5 +186,9 @@ public class Productos implements Serializable {
     public String toString() {
         return "modelos.Productos[ iDProducto=" + iDProducto + " ]";
     }
+
+    public void setPromocion(BigDecimal bigDecimal) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }
