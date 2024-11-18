@@ -207,4 +207,15 @@ public class CategoriasJpaController implements Serializable {
         }
     }
     
+    public List<Object[]> findCategoriasIdAndName() {
+    EntityManager em = getEntityManager();
+    try {
+        // Crear la consulta para seleccionar solo el idCategoria y nombreCategoria
+        String query = "SELECT c.idCategoria, c.nombreCategoria FROM Categorias c";
+        return em.createQuery(query).getResultList();
+    } finally {
+        em.close();
+    }
+}
+
 }
