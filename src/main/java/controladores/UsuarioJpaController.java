@@ -285,5 +285,9 @@ public String validateUserAndGetRole(String email, String password) {
     return null; // Si no se encuentra el usuario o la contraseña es incorrecta
 }
 
+    List<Usuario> findUsuariosEntities() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
 
 }
