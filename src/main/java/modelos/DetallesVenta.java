@@ -97,6 +97,13 @@ public class DetallesVenta implements Serializable {
     public void setIdVenta(Ventas idVenta) {
         this.idVenta = idVenta;
     }
+    
+    public BigDecimal getSubtotal() {
+        if (cantidad != null && precioUnitario != null) {
+            return precioUnitario.multiply(new BigDecimal(cantidad));
+        }
+        return BigDecimal.ZERO; // Si no se puede calcular, devolver 0
+    }
 
     @Override
     public int hashCode() {
@@ -121,6 +128,10 @@ public class DetallesVenta implements Serializable {
     @Override
     public String toString() {
         return "modelos.DetallesVenta[ idDetalle=" + idDetalle + " ]";
+    }
+
+    public void setIDProducto(Productos producto) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
 }

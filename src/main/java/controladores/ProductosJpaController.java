@@ -199,5 +199,9 @@ public class ProductosJpaController implements Serializable {
             em.close();
         }
     }
+
+    public Productos findProducto(Integer idProducto) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }
